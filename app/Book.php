@@ -16,6 +16,6 @@ class Book extends Model
         'title',
         'description',
         'price',
-        'auth_id',
+        'author_id',
     ];
 }
