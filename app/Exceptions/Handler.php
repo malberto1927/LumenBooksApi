@@ -73,7 +73,7 @@ class Handler extends ExceptionHandler
 
         if ($exception instanceof AuthenticationException) {
 
-            return $this->errorResponse($exception->getMessage(), Response::HTTP_FORBIDDEN);
+            return $this->errorResponse($exception->getMessage(), Response::HTTP_UNAUTHORIZED);
         }
 
         if ($exception instanceof ValidationException) {
